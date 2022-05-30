@@ -1,7 +1,7 @@
 require './question'
 # Will manage the question being asked, as well as who the current player is
 class Turn
-  attr_reader :question
+  attr_reader :question, :current_player
 
   def initialize(player1, player2)
     @players = []
