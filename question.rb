@@ -2,7 +2,7 @@
 class Question
   attr_reader :question
 
-  def initialize(lower_limit, upper_limit)
+  def initialize(lower_limit = 2, upper_limit = 40)
     @answer = rand(lower_limit..upper_limit)
     difference = rand(1...@answer)
     @question = "What does #{difference} plus #{@answer - difference} equal?"
