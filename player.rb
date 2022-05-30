@@ -15,4 +15,12 @@ class Player
   def dead?
     @current_lives <= 0
   end
+
+  def to_s
+    "#{name}: #{score}"
+  end
+
+  def damage
+    @current_lives -= 1
+  end
 end
